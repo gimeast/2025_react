@@ -1,0 +1,32 @@
+.app {
+    max-width: 800px; // 너비 설정 필수
+    margin: 0 auto;
+    display: block;
+}
+.blackNav {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    color: #fff;
+    padding-left: 20px;
+}
+.wrapper {
+    .article {
+        border-bottom: 1px solid gray;
+        padding-top: 10px;
+
+        &:hover {
+            background-color: lightgray;
+        }
+
+        .likeBtn {
+            border: none;
+            background: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .likeEmoji {
+            margin-right: 10px;
+        }
+    }
+}
