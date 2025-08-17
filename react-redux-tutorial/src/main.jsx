@@ -5,9 +5,8 @@ import App from "./App.jsx";
 import rootReducer from "./modules/index.js";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
-import { devToolsEnhancer } from "redux-devtools-extension";
 
-const store = createStore(rootReducer, devToolsEnhancer());
+const store = createStore(rootReducer);
 
 createRoot(document.getElementById("root")).render(
     <StrictMode>
